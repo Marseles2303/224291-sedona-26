@@ -17,8 +17,70 @@
 	</nav>
    </header>
     <main>
-	
-     <section>
+	  <form class="filter" method="get" action="#">
+	     <fieldset>
+		   <legend>Инфраструктура:</legend>
+		     <ul>
+			   <li>
+			     <input type="checkbox" name="pool" id="pool" checked>
+				 <label for="pool">
+				  Бассейн
+				 </label>
+			   </li>
+			   <li>
+			     <input type="checkbox" name="parking" id="parking">
+				 <label for="parking">
+				  Парковка
+				 </label>
+			   </li>
+			   <li>
+			     <input type="checkbox" name="wi-fi" id="wi-fi">
+				 <label for="wi-fi">
+				  Wi-Fi
+				 </label>
+			   </li>
+			 </ul>
+		 </fieldset>
+		 <fieldset>
+		   <legend>Тип жилья:</legend>
+		     <ul>
+			   <li>
+			     <input type="checkbox" name="hotel" id="hotel" checked>
+				 <label for="hotel">
+				   Гостиница
+				 </label> 
+			   </li>
+			   <li>
+			      <input type="checkbox" name="motel" id="motel" checked>
+				  <label for="motel">
+				   Мотель
+				  </label> 
+			   </li>
+			   <li>
+			      <input type="checkbox" name="apartment" id="apartment" checked>
+				  <label for="apartment">
+				   Апартаменты
+				  </label> 
+			   </li>	
+			 </ul>
+		 </fieldset>
+		 <fieldset>
+		    <legend>Стоимость в сутки (Р):</legend>
+			<input type="range" min="0" max="3000">
+		 </fieldset>
+		 <button type="submit">Показать</button>
+	  </form>
+	 <div class="filters">
+	   <h2 class="visually-hidden">Фильтр отелей</h2>
+	     <h3>Найдено:3<h3>
+		 <h4>сортировка</h4>
+		   <ul>
+		     <li>по цене</li>
+			 <li>по типу</li>
+			 <li>по рейтингу</li>
+		   </ul>	   
+	 </div>
+      <section>
 	  <ul class="hotels">
 	   <li>
 	     <h3>AMARA RESORT & SPA</h3>
